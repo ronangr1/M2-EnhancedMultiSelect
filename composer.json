@@ -1,0 +1,22 @@
+{
+    "name": "ronangr1/module-enhanced-multiselect",
+    "description": "Module Enhanced Multiselect Magento 2",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Ronan Guérin",
+            "email": "guerin.ronan@aol.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ronangr1\\EnhancedMultiSelect\\": ""
+        }
+    }
+}

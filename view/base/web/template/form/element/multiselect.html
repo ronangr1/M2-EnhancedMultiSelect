@@ -1,0 +1,24 @@
+<select multiple class="admin__control-multiselect" data-bind="
+    attr: {
+        name: inputName,
+        id: uid,
+        size: size ? size : '6',
+        disabled: disabled,
+        'aria-describedby': noticeId,
+        placeholder: placeholder
+    },
+    hasFocus: focused,
+    optgroup: options,
+    selectedOptions: value,
+    optionsValue: 'value',
+    optionsText: 'label'"
+/>
+<div style="float: left; margin-right: 12px;">
+    <div style="margin-bottom: 12px">
+        <button data-bind="i18n: 'Select All', click: selectAll"></button>
+    </div>
+    <div>
+        <button data-bind="i18n: 'Reset All', click: resetAll"></button>
+    </div>
+
+</div>
