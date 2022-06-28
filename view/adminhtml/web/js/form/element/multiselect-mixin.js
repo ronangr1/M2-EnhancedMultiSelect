@@ -21,7 +21,7 @@ define(['jquery', 'uiRegistry', 'ko'], function ($, registry, ko) {
             resetAll: function (element) {
                 const input = $(`#${element.uid}`);
                 input.children().prop('selected', false);
-                this.counter(input.children("option:selected").length);
+                this.counter(0);
             }
         });
     };
