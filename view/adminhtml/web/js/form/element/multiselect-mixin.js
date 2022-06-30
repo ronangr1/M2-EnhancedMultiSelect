@@ -4,12 +4,11 @@ define(['jquery', 'uiRegistry', 'ko'], function ($, registry, ko) {
 
     return function (Multiselect) {
         return Multiselect.extend({
-            counter: ko.observable(0),
 
             initialize: function () {
                 this._super();
-
-                this.counter(this.initialValue.length);
+                
+                this.counter = ko.observable(this.initialValue.length);
             },
 
             selectAll: function (element) {
